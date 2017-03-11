@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Автовинил-Оптом.РФ</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bxslider.css" rel="stylesheet">
+	<link href="css/popup.css" rel="stylesheet">
+	<link href="css/fancybox.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/anchor.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			var $menu = $("#menu");
+				
+			$(window).scroll(function(){
+				if ( $(this).scrollTop() > 100 && $menu.hasClass("default-menu") ){
+					$menu.fadeOut('fast',function(){
+						$(this).removeClass("default-menu")
+							   .addClass("fixed-menu transbg")
+							   .fadeIn('fast');
+					});
+				} else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed-menu")) {
+					$menu.fadeOut('fast',function(){
+						$(this).removeClass("fixed-menu transbg")
+							   .addClass("default-menu")
+							   .fadeIn('fast');
+					});
+				}
+			});
+			
+			$menu.hover(
+				function(){
+					if( $(this).hasClass('fixed-menu') ){
+						$(this).removeClass('transbg');
+					}
+				},
+				function(){
+					if( $(this).hasClass('fixed-menu') ){
+						$(this).addClass('transbg');
+					}
+				});
+		});
+	</script>
+	<script>
+		function callbackH(){
+			document.getElementById("callbackButtonHeader").style.display="none";
+			document.getElementById("callbackFormHeader").style.opacity="1";
+		}
+		function callbackF(){
+			document.getElementById("callbackButtonFooter").style.display="none";
+			document.getElementById("callbackFormFooter").style.opacity="1";
+		}
+	</script>
+	<script>
+		jQuery(function($){
+		$(".phone").mask("+7 (999) 999-9999");
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+		  slideWidth: 932,
+				 minSlides: 1,
+				 maxSlides: 1,
+				 moveSlides: 1,
+				 slideMargin: 0,
+				 pager:false
+		  });
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("a.modalbox").fancybox();
+		});
+	</script>
+</head>
+<body>
+
+
+<!-- Шапка -->
+<header>
+	<div class="header-top">
+		<!-- Меню -->
+		<div class="menu-wrapper">
+			<nav class="header-top-menu default-menu" id="menu">
+				<ul>
+					<li class="transition disabled-1"><a href="#assortment" class="transition">Каталог</a>
+					<li class="transition"><a href="#get" class="transition">Преимущества</a>
+					<li class="transition"><a href="#delivery" class="transition">Доставка и оплата</a>
+					<li class="transition"><a href="#questions" class="transition">Написать нам</a>
+					<li class="transition disabled-2"><a href="#win1" class="transition">Скачать прайс</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Лого и контакты -->
+		<div class="box">
+			<div class="header-top-logo">
+				<h1 style="position:absolute;opacity:0;z-index:-1;">АВТОВИНИЛ</h1>
+				<a href=".">
+					<img src="assets/images/logo.png" alt="Логотип">
+					<span>-оптом. РФ</span>
+				</a>
+				<p>Наши цены радуют клиентов и пугают конкурентов</p>
+			</div>
+			
+			<div class="header-top-contacts">
+				<div class="htc-box">
+					<p>Звоните нам</p>
+					<p>8 (902) 2-555-016</p>
+					<button class="transition" id="callbackButtonHeader" onclick="callbackH()">заказать звонок</button>
+					<!-- Скрытая форма -->
+					<form action="#" class="htc-hidden-form transition validate3" id="callbackFormHeader">
+						<input type="text" name="phone" class="phone transition">
+						<input type="hidden" name="hidden" value="300">
+						<button class="transition">Перезвонить</button>
+					</form>
+					<script>
+					$(".validate3").validate({
+						rules: {
+							phone: { required: true},
+						 },
+						messages: {
+
+						 },
+						errorPlacement: function(error, element) {
+
+						 },
+						submitHandler: function(form) {
+						  var forma =$(form);
+						  forma.find('button').replaceWith("<em>отправка...</em>");
+							  
+							  $.ajax({
+								type: 'POST',
+								url: 'mailsend.php',
+								data: forma.serialize(),
+								success: function(data) {$('.validate3').find('input[type="text"]').val('');
+								  if(data == "true") {
+								  setTimeout("location.href='.#win2'", 1000);
+								 }
+								}
+							  });
+						 $('.validate3').replaceWith('<form action="#" style="display:none">');
+						 },
+						 success: function() {
+						  
+						 },
+						 highlight: function(element, errorClass) {
+						  $(element).addClass('error');
+						 },
+						 unhighlight: function(element, errorClass, validClass) {
+						  $(element).removeClass('error');
+						 }
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Первый экран - Основной контент -->
+	<div class="header-main">
+		<div class="box">
+			<!-- Заголовок -->
+			<h1>
+				самые крупные поставки автомобильных пленок в страну,<br>
+				доставка по рф и снг от одного  рулона
+			</h1>
+			<!-- Список -->
+			<div class="header-main-content clearfix">
+				<div class="hmc-left-side">
+					<ul>
+						<li><span><mark>1</mark> раз в месяц крупные поступления на склад</span></li>
+						<li><span><mark>2</mark> оптовых склада в России</span></li>
+						<li><span><mark>6</mark> лет успешной работы</span></li>
+						<li><span>более <mark>140</mark> видов пленок</span></li>
+						<li><span>более <mark>2000</mark> рулонов в наличии</span></li>
+					</ul>
+				</div>
+				
+				<div class="hmc-right-side">
+					<p>Оставьте заявку <span>для</span></p>
+					<p>получения оптовых цен на автовинил</p>
+					<form action="#" id="validate2">
+						<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ...">
+						<input type="text" name="email" class="email transition" placeholder="ВАШ E-MAIL...">
+						<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН...">
+						<input type="hidden" name="hidden" value="200">
+						<button class="transition">ПОЛУЧИТЬ ПРАЙС</button>
+					</form>
+					<script>
+					$("#validate2").validate({
+						rules: {
+							name: { required: true,
+									minlength: 2},
+							phone: { required: true},
+							email: { required: true, email: true},
+						 },
+						messages: {
+
+						 },
+						errorPlacement: function(error, element) {
+
+						 },
+						submitHandler: function(form) {
+						  var forma =$(form);
+						  forma.find('button').replaceWith("<em>отправка...</em>");
+							  
+							  $.ajax({
+								type: 'POST',
+								url: 'mailsend.php',
+								data: forma.serialize(),
+								success: function(data) {$('#validate2').find('input[type="text"]').val('');
+								  if(data == "true") {
+								  setTimeout("location.href='.#win2'", 1000)
+								 }
+								}
+							  });
+						 forma.find('em').replaceWith('<button class="orange" id="button-2">Заявка принята</button>');
+						 },
+						 success: function() {
+						  
+						 },
+						 highlight: function(element, errorClass) {
+						  $(element).addClass('error');
+						 },
+						 unhighlight: function(element, errorClass, validClass) {
+						  $(element).removeClass('error');
+						 }
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>	
+	
+	
+<!-- Нашу пленку покупают -->
+<section class="buy">
+	<div class="castle-decoration-top"></div>
+	<div class="box">
+		<h1>
+			<span>нашу пленку покупают</span>
+		</h1>
+		
+		<!-- Иконки с подписями -->
+		<div class="buy-content">
+			<figure class="buy-content-group bcg-1">
+				<div class="bcg-icon bcg-icon-1 transition"></div>
+				<figcaption>автомагазины</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-2">
+				<div class="bcg-icon bcg-icon-2 transition"></div>
+				<figcaption>автомастерские</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-3">
+				<div class="bcg-icon bcg-icon-3 transition"></div>
+				<figcaption>тюнинг-ателье</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-4">
+				<div class="bcg-icon bcg-icon-4 transition"></div>
+				<figcaption>
+					начинающие<br>
+					предприниматели
+				</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-5">
+				<div class="bcg-icon bcg-icon-5 transition"></div>
+				<figcaption>частные оклейщики</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-6">
+				<div class="bcg-icon bcg-icon-6 transition"></div>
+				<figcaption>рекламные агентства</figcaption>
+			</figure>
+			
+			<figure class="buy-content-group bcg-7">
+				<div class="bcg-icon bcg-icon-7 transition"></div>
+				<figcaption>интернет магазины</figcaption>
+			</figure>
+		</div>
+		
+	</div>
+	<div class="castle-decoration-bottom"></div>
+</section>
+
+
+<!-- Форма 1 -->
+<section class="form form-1">
+	<div class="box">
+		<h1>оставьте заявку и мы рассчитаем лучшую цену для вас !</h1>
+
+		<form action="#" id="validate4">
+			<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ...">
+			<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН...">
+			<input type="hidden" name="hidden" value="400">
+			<button class="transition">ПОЛУЧИТЬ ПРАЙС</button>
+		</form>
+		<script>
+		$("#validate4").validate({
+			rules: {
+				name: { required: true,
+						minlength: 2},
+				phone: { required: true},
+			 },
+			messages: {
+
+			 },
+			errorPlacement: function(error, element) {
+
+			 },
+			submitHandler: function(form) {
+			  var forma =$(form);
+			  forma.find('button').replaceWith("<em>отправка...</em>");
+				  
+				  $.ajax({
+					type: 'POST',
+					url: 'mailsend.php',
+					data: forma.serialize(),
+					success: function(data) {$('#validate4').find('input[type="text"]').val('');
+					  if(data == "true") {
+					  setTimeout("location.href='.#win2'", 1000)
+					 }
+					}
+				  });
+			 forma.find('em').replaceWith('<button class="orange" id="button-2">Заявка принята</button>');
+			 },
+			 success: function() {
+			  
+			 },
+			 highlight: function(element, errorClass) {
+			  $(element).addClass('error');
+			 },
+			 unhighlight: function(element, errorClass, validClass) {
+			  $(element).removeClass('error');
+			 }
+			});
+		</script>
+
+	</div>
+</section>
+
+
+<!-- Ассортимент -->
+<div id="assortment" style="position:relative;top:-40px;"></div>
+<section class="assortment">
+	<div class="box">
+		<h1>Наш ассортимент</h1>
+		<!-- Слайдер -->
+		<ul class="bxslider">
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/3D-Karbon.jpg" rel="group" class="modalbox"><img src="assets/bxslider/3D-Karbon.jpg" alt="3D-Карбон"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>3D-Карбон:</h3>
+					<p>Пленка имитирующая структуру карбон, одна из самых распространенных виниловых пленок.</p>
+					<p>Большой ассортимент цветов.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>3780 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/4D-Karbon.jpg" rel="group" class="modalbox"><img src="assets/bxslider/4D-Karbon.jpg" alt="4D-Карбон"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>4D-Карбон:</h3>
+					<p>Более «глубокий» визуальный эффект, чем у 3D-Карбона.</p>
+					<p>Ширина 1.5 метра, толщина пленки 170-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>4450 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Matovye-plenki.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Matovye-plenki.jpg" alt="Матовые пленки"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Матовые пленки:</h3>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>3780 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Gljancevye-plenki.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Gljancevye-plenki.jpg" alt="Глянцевые пленки"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Глянцевые пленки:</h3>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>3780 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Almaznaja-kroshka.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Almaznaja-kroshka.jpg" alt="Алмазная крошка"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Алмазная крошка:</h3>
+					<p>Эффектно блестит на солнце. Доступны все основные цвета.</p>
+					<p>Ширина 1.5 метра, толщина пленки 170-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>4510 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Shlifovannyj-aljuminij.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Shlifovannyj-aljuminij.jpg" alt="Шлифованный алюминий"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Шлифованный алюминий:</h3>
+					<p>Создает эффект «тертого» алюминия.</p>
+					<p>Цвета: синий, черный, серебро, графит, золото.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 100%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>4820 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Kozha-reptilij.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Kozha-reptilij.jpg" alt="Кожа рептилий"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Кожа рептилий:</h3>
+					<p>Имитация кожи крокодила, змеи.</p>
+					<p>Цвета: белый, черный, зеленый, серый</p>
+					<p>Ширина 1.5 метра, толщина пленки 180-190 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>4510 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Hameleony.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Hameleony.jpg" alt="Хамелеоны"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Хамелеоны:</h3>
+					<p>Пленка, переливающаяся несколькими цветами на солнце.</p>
+					<p>Бывают несколько видов: Зd-карбон, рептилии, текстурные пленки.</p>
+					<p>Ширина 1.5 метра, толщина пленки 180-190 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>6100 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Hrom-plenki.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Hrom-plenki.jpg" alt="Хром пленки"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Хром пленки:</h3>
+					<p>Имеют металлизированную структуру, бывает матовый хром и зеркальный хром.</p>
+					<p>Доступны все основные цвета.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 20 метров.</p>
+					<p>Растяжение до 100%.</p>
+					<p class="assortment-price">Оптовые цены от <mark>7990 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Zashhitnye-plenki.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Zashhitnye-plenki.jpg" alt="Защитные пленки"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Защитные пленки:</h3>
+					<p>Используются для легкого «бронирования» кузова автомобиля, защищая от сколов, мелких царапин, без изменения внешнего вида автомобиля(прозрачная пленка).</p>
+					<p>Такие пленки так же называют антигравийными.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 15 метров.</p>
+					<p>Растяжение до 100%.</p>
+					<p class="assortment-price">Оптовые цены от <mark>3420 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/4D-Plenki.jpg" rel="group" class="modalbox"><img src="assets/bxslider/4D-Plenki.jpg" alt="4D-Пленки"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>4D-Пленки:</h3>
+					<p>По-другому называются текстурные пленки.</p>
+					<p>В достаточно широком ассортименте.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-190 микрон, длина рулона 30 метров.</p>
+					<p> Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>4030 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Samoklejushhajasja-alkantara.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Samoklejushhajasja-alkantara.jpg" alt="Самоклеющаяся алькантара"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Самоклеющаяся алькантара (замша):</h3>
+					<p>Замша на клеевой основе.</p>
+					<p>В основном используется для оклейки салона авто.</p>
+					<p>Ширина 1.5 метра, толщина материала 160-180 микрон, длина рулона 15 метров</p>
+					<p class="assortment-price">Оптовые цены от <mark>4510</mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Kamufljazh.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Kamufljazh.jpg" alt="Камуфляж"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Камуфляж:</h3>
+					<p>Бывает нескольких видов: русский, зимний, камуфляж пиксель, песок.</p>
+					<p>Ширина 1.5 метра, толщина пленки 160-180 микрон, длина рулона 30 метров.</p>
+					<p>Растяжение до 150%. С каналами для отвода воздуха.</p>
+					<p class="assortment-price">Оптовые цены от <mark>5490 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Tonirovka-dlja-far.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Tonirovka-dlja-far.jpg" alt="Тонировка для фар"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Тонировка для фар:</h3>
+					<p>Прозрачная виниловая пленка для бронирования/тонирования оптики автомобиля.</p>
+					<p>Достаточно большой ассортимент по цветам.</p>
+					<p>Ширина 30 сантиметров, толщина пленки 120-180 микрон, длина рулона 10 метров.</p>
+					<p>Растяжение до 100%.</p>
+					<p class="assortment-price">Оптовые цены от <mark>295 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+			<li>
+				<div class="assortment-photo">
+					<a href="assets/bxslider/full/Semnaja-tonirovka.jpg" rel="group" class="modalbox"><img src="assets/bxslider/Semnaja-tonirovka.jpg" alt="Съемная тонировка"></a>
+				</div>
+				<div class="assortment-description">
+					<h3>Съемная тонировка:</h3>
+					<p>Многоразовая силиконовая тонировка.</p>
+					<p>5% 15% 25% 35%</p>
+					<p>Ширина 1 метр, толщина пленки 130-150 микрон, длина рулона 30 метров.</p>
+					<p class="assortment-price">Оптовые цены от <mark>6100 ₽ </mark> рулон.</p>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+</section>
+
+
+<!-- Форма 2 -->
+<section class="form form-2">
+	<div class="box">
+		<h1>закажи прайс лист с подробными ценами</h1>
+
+		<form action="#" id="validate5">
+			<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ...">
+			<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН...">
+			<input type="hidden" name="hidden" value="400">
+			<button class="transition">ПОЛУЧИТЬ ПРАЙС</button>
+		</form>
+		<script>
+		$("#validate5").validate({
+			rules: {
+				name: { required: true,
+						minlength: 2},
+				phone: { required: true},
+			 },
+			messages: {
+
+			 },
+			errorPlacement: function(error, element) {
+
+			 },
+			submitHandler: function(form) {
+			  var forma =$(form);
+			  forma.find('button').replaceWith("<em>отправка...</em>");
+				  
+				  $.ajax({
+					type: 'POST',
+					url: 'mailsend.php',
+					data: forma.serialize(),
+					success: function(data) {$('#validate5').find('input[type="text"]').val('');
+					  if(data == "true") {
+					  setTimeout("location.href='.#win2'", 1000)
+					 }
+					}
+				  });
+			 forma.find('em').replaceWith('<button class="orange" id="button-2">Заявка принята</button>');
+			 },
+			 success: function() {
+			  
+			 },
+			 highlight: function(element, errorClass) {
+			  $(element).addClass('error');
+			 },
+			 unhighlight: function(element, errorClass, validClass) {
+			  $(element).removeClass('error');
+			 }
+			});
+		</script>
+	</div>
+</section>
+
+
+<!-- Что вы получаете в итоге -->
+<div id="get" style="position:relative;top:-40px;"></div>
+<section class="get">
+	<div class="box">
+		<h1>Что вы получаете в итоге ?</h1>
+	
+		<div class="get-ball ball-1 transition">
+			<div class="ball-timer"><span>1</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				Надежного<br>
+				поставщика и<br>
+				партнера в одном<br>
+				лице
+			</p>
+		</div>
+		<div class="get-ball ball-2 transition">
+			<div class="ball-timer"><span>2</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				Квалифицированные<br> 
+				консультации<br>
+				по подбору<br>
+				ассортимента и<br>
+				его реализации<br>
+			</p>
+		</div>
+		<div class="get-ball ball-3 transition">
+			<div class="ball-timer"><span>3</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				Автовинип,<br>
+				который<br>
+				продается, а не<br>
+				лежит на<br>
+				прилавке
+			</p>
+		</div>
+		<div class="get-ball ball-4 transition">
+			<div class="ball-timer"><span>4</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				Адекватные<br>
+				цены, на которые<br>
+				можно накрутить<br>
+				до 600%
+			</p>
+		</div>
+		<div class="get-ball ball-5 transition">
+			<div class="ball-timer"><span>5</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				Минимальные<br>
+				вложения для старта:<br>
+				что бы начать<br>
+				зарабатывать<br>
+				достаточно купить 5-8<br>
+				рулонов пленки
+			</p>
+		</div>
+		<div class="get-ball ball-6 transition">
+			<div class="ball-timer"><span>6</span></div>
+			<div class="get-ball-wrapper transition"></div>
+			<p>
+				100% безопасность,<br>
+				если Вы каким то образом<br>
+				передумали заниматься<br>
+				автовинилом, а товар уже<br>
+				купили у нас, мы продадим его<br>
+				в нашем розничном магазине.<br>
+				
+			</p>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Форма 3 -->
+<section class="form form-3">
+	<div class="box">
+		<h1>станьте нашим партнером прямо сейчас !</h1>
+
+		<form action="#" id="validate6">
+			<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ...">
+			<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН...">
+			<input type="hidden" name="hidden" value="500">
+			<button class="transition">ЗАПАРТНЁРИТЬСЯ</button>
+		</form>
+		<script>
+		$("#validate6").validate({
+			rules: {
+				name: { required: true,
+						minlength: 2},
+				phone: { required: true},
+			 },
+			messages: {
+
+			 },
+			errorPlacement: function(error, element) {
+
+			 },
+			submitHandler: function(form) {
+			  var forma =$(form);
+			  forma.find('button').replaceWith("<em>отправка...</em>");
+				  
+				  $.ajax({
+					type: 'POST',
+					url: 'mailsend.php',
+					data: forma.serialize(),
+					success: function(data) {$('#validate6').find('input[type="text"]').val('');
+					  if(data == "true") {
+					  setTimeout("location.href='.#win2'", 1000)
+					 }
+					}
+				  });
+			 forma.find('em').replaceWith('<button class="orange" id="button-2">Заявка принята</button>');
+			 },
+			 success: function() {
+			  
+			 },
+			 highlight: function(element, errorClass) {
+			  $(element).addClass('error');
+			 },
+			 unhighlight: function(element, errorClass, validClass) {
+			  $(element).removeClass('error');
+			 }
+			});
+		</script>
+	</div>
+</section>
+
+
+<!-- Доставка -->
+<div id="delivery" style="position:relative;top:-40px;"></div>
+<section class="delivery">
+	<div class="box">
+		<h1>как мы доставляем</h1>
+		<h3>Быстрая и недорогая доставка по <mark> <strong>рф</strong> и <strong>снг</strong></mark> транспортными компаниями </h3>
+		
+		<div class="partners">
+			<div class="partners-cell trans-company-1"></div>
+			<div class="partners-cell trans-company-2"></div>
+			<div class="partners-cell trans-company-3"></div>
+			<div class="partners-cell trans-company-4"></div>
+			<div class="partners-cell trans-company-5"></div>
+			<div class="partners-cell trans-company-6"></div>
+			<div class="partners-cell trans-company-7"></div>
+		</div>
+		<h3>Средняя цена доставки по России<mark> <strong>200 руб./рулон</strong></mark></h3>
+	</div>
+</section>
+
+
+<!-- Способы оплаты -->
+<section class="payment">
+	<div class="box">
+		<h1>способы оплаты</h1>
+		<h3>прозрачные и безопасные способы оплаты</h3>
+		
+		<div class="payment-providers">
+			<div class="payment-provider-cell ppc-1"></div>
+			<div class="payment-provider-cell ppc-2"></div>
+			<div class="payment-provider-cell ppc-3"></div>
+		</div>
+		
+	</div>
+</section>
+
+
+<!-- Остались вопросы? -->
+<div id="questions" style="position:relative;top:-40px;"></div>
+<section class="questions">
+	<div class="box">
+		<h1>Остались вопросы? задайте их прямо сейчас!</h1>
+		
+		<form action="#" class="questions-form clearfix" id="validate7">
+			
+			<div class="questions-form-left-side">
+				<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ...">
+				<input type="text" name="email" class="email transition" placeholder="ВАШ E-MAIL...">
+				<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН...">
+			</div>
+			
+			<div class="questions-form-right-side">
+				<textarea name="question" class="question transition" placeholder="НАПИШИТЕ НАМ ВАШ ВОПРОС..."></textarea>
+				<input type="hidden" name="hidden" value="600">
+				<button class="transition">ЗАДАТЬ ВОПРОС</button>
+			</div>
+			
+		</form>
+		<script>
+		$("#validate7").validate({
+			rules: {
+				name: { required: true,
+						minlength: 2},
+				phone: { required: true},
+				email: { required: true, email: true},
+				question: { required: true, minlength: 10},
+			 },
+			messages: {
+
+			 },
+			errorPlacement: function(error, element) {
+
+			 },
+			submitHandler: function(form) {
+			  var forma =$(form);
+			  forma.find('button').replaceWith("<em>отправка...</em>");
+				  
+				  $.ajax({
+					type: 'POST',
+					url: 'mailsend.php',
+					data: forma.serialize(),
+					success: function(data) {
+						$('#validate7').find('input[type="text"]').val('');
+						$('#validate7').find('textarea').val('');
+					  if(data == "true") {
+					  setTimeout("location.href='.#win2'", 1000)
+					 }
+					}
+				  });
+			 forma.find('em').replaceWith('<button class="orange" id="button-2">Заявка принята</button>');
+			 },
+			 success: function() {
+			  
+			 },
+			 highlight: function(element, errorClass) {
+			  $(element).addClass('error');
+			 },
+			 unhighlight: function(element, errorClass, validClass) {
+			  $(element).removeClass('error');
+			 }
+			});
+		</script>
+
+	</div>
+</section>
+
+
+<!-- Подвал -->
+<footer>
+	<div class="box">
+		<div class="footer-content">
+		
+			<div class="footer-left-side">
+				<a href=".">
+					<img src="assets/images/footer-logo.png" alt="Автовинил-оптом.РФ">
+				</a>
+			</div>
+			
+			<div class="footer-center">
+				<p>
+					Наши контакты:<br>
+					г. Каменск-Уральский ул. Рябова, 1  ТЦ Вианор, 2-ой этаж, м-н "Sinocar" e-mail: sales@автовинил-оптом.рф<br>
+				</p>
+				<a href="#agreement" class="modalbox">Политика конфиденциальности</a>
+			</div>
+			
+			<div class="footer-right-side">
+				<p>Звоните нам</p>
+				<p>8 (902) 2-555-016</p>
+					<button class="transition" id="callbackButtonFooter" onclick="callbackF()">ЗАКАЗАТЬ ЗВОНОК</button>
+					<!-- Скрытая форма -->
+					<form action="#" class="frs-hidden-form transition validate8" id="callbackFormFooter">
+						<input type="text" name="phone" class="phone transition">
+						<button class="transition">Перезвонить</button>
+						<input type="hidden" name="hidden" value="300">
+					</form>
+					<script>
+					$(".validate8").validate({
+						rules: {
+							phone: { required: true},
+						 },
+						messages: {
+
+						 },
+						errorPlacement: function(error, element) {
+
+						 },
+						submitHandler: function(form) {
+						  var forma =$(form);
+						  forma.find('button').replaceWith("<em>отправка...</em>");
+							  
+							  $.ajax({
+								type: 'POST',
+								url: 'mailsend.php',
+								data: forma.serialize(),
+								success: function(data) {$('.validate8').find('input[type="text"]').val('');
+								  if(data == "true") {
+								  setTimeout("location.href='.#win2'", 1000);
+								 }
+								}
+							  });
+						 $('.validate8').replaceWith('<form action="#" style="display:none">');
+						 },
+						 success: function() {
+						  
+						 },
+						 highlight: function(element, errorClass) {
+						  $(element).addClass('error');
+						 },
+						 unhighlight: function(element, errorClass, validClass) {
+						  $(element).removeClass('error');
+						 }
+						});
+					</script>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Callback Popup -->
+<a href="#close" class="overlay" id="win1"></a>
+<div class="popup">
+	<p>Для получения прайса заполните форму</p>
+	<form action="#" id="validate1">
+		<input type="text" name="name" class="name transition" placeholder="ВАШЕ ИМЯ..."><br>
+		<input type="text" name="phone" class="phone transition" placeholder="ВАШ ТЕЛЕФОН..."><br>
+		<input type="hidden" name="hidden" value="100">
+		<button class="transition">ОТПРАВИТЬ</button>
+	</form>
+		<script>
+		$("#validate1").validate({
+			rules: {
+				name: { required: true,
+						minlength: 2},
+				phone: { required: true},
+			 },
+			messages: {
+
+			 },
+			errorPlacement: function(error, element) {
+
+			 },
+			submitHandler: function(form) {
+			  var forma =$(form);
+			  forma.find('button').replaceWith("<em>отправка...</em>");
+				  
+				  $.ajax({
+					type: 'POST',
+					url: 'mailsend.php',
+					data: forma.serialize(),
+					success: function(data) {$('#validate1').find('input[type="text"]').val('');
+					  if(data == "true") {
+					  setTimeout("location.href='.#win2'", 1000)
+					 }
+					}
+				  });
+			 forma.find('em').replaceWith('<button class="transition" id="button-2">Заявка принята</button>');
+			 },
+			 success: function() {
+			  
+			 },
+			 highlight: function(element, errorClass) {
+			  $(element).addClass('error');
+			 },
+			 unhighlight: function(element, errorClass, validClass) {
+			  $(element).removeClass('error');
+			 }
+			});
+		</script>
+<a class="close-btn" title="Закрыть" href="#close"></a>
+</div>
+
+
+<!-- Thank You Page -->
+<a href="#close" class="overlay" id="win2"></a>
+<div class="popup2">
+	<h1>Заявка успешно отправлена,</h1>
+	<h2>
+		в скором времени<br>
+		с Вами свяжется менеджер
+	</h2>
+	<a href="#close" class="transition">ЗАКРЫТЬ</a>
+<a class="close-btn" title="Закрыть" href="#close"></a>
+</div>
+
+
+<!-- Политика конфиденциальности -->
+<article id="agreement" style="display:none; width:620px; padding:10px;">
+	<h4 style="text-align:center; padding:0 0 20px;">Политика конфиденциальности</h4>
+	<p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации. Все лица заполнившие сведения, составляющие персональные данные на данном сайте Автовинил-Оптом.РФ, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных. Под персональными данными Гражданина понимается подписные формы и любая биографическая информация: общая информация (Ф.И.О посетителя); e-mail, контактный телефон, адрес доставки заказа. Посетители сайта направляют свои персональные данные оператору в целях получения какой - либо необходимой посетителю информации, принадлежащей сайту Автовинил-Оптом.РФ, или для оформления заказа товара, представленного на сайте Автовинил-Оптом.РФ. Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка его персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение на не ограниченную продолжительность времени, уточнение (обновление, изменение), использование, уничтожение. Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично. Отправляя любой запрос или оформляя заказ на сайте Автовинил-Оптом.РФ Вы принимаете данное соглашение об обработке персональных данных.</p>
+</article>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24953594 = new Ya.Metrika({id:24953594,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24953594" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

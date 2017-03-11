@@ -1,0 +1,166 @@
+/* Форимируем слой затемнения фона */
+.overlay {
+    background-color:rgba(0,0,0,0.85);
+    bottom:0;
+    left:0;
+	right:0;
+    top:0;
+    opacity:0;
+    position:fixed;
+	cursor:default;
+    visibility:hidden;
+	transition: opacity .5s;
+    z-index:50;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Формируем и позиционируем всплывающее окно */
+.popup{ 
+	position:fixed;
+    visibility:hidden;
+	
+	width:299px;
+	height:296px;
+	border-top:10px solid #1b8587;
+	background:rgba(255,255,255,0.89);
+	
+	text-align:center;
+	text-transform:uppercase;
+	color:#444;
+	
+	-webkit-transition: left  ease 0.5s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+	z-index:51;
+}
+.popup p{
+	padding:24px 0 2px;
+	font-weight:600;
+	font-size:18px;
+	line-height:24px;
+}
+.popup form>input{
+	margin-bottom:28px;
+	padding-left:37px;
+	width:215px;
+	height:33px;
+	border:none;
+	border-left:6px solid #2e9393;
+	box-shadow:0 0 0 1px rgba(0,0,0,0.34);
+	
+	font:12px 'Open Sans';
+}
+.popup form>input:nth-of-type(1){
+	margin-top:28px;
+}
+.popup .name{
+	background:#fff url(../assets/images/icon-1.png)8px 4px no-repeat;
+}
+.popup .phone{
+	background:#fff url(../assets/images/icon-3.png)10px 3px no-repeat;
+}
+.popup form>input:hover{
+	border-left-color:#1c84ba;
+}
+.popup form>input:focus{
+	border-left-color:#444;
+}
+.popup form>button{
+	width:212px;
+	height:34px;
+	border-radius:3px;
+	background-color:#278A8D;
+	cursor:pointer;
+	
+	font-size:18px;
+	color:#fff;
+}
+.popup form>button:hover{
+	background-color:#229FE0;
+}
+.popup form>button:active{
+	background-color:#444;
+}
+
+/* Формируем и позиционируем всплывающее окно */
+.popup2{ 
+	position:fixed;
+    visibility:hidden;
+
+	width:445px;
+	height:245px;
+	border-top:10px solid #1b8587;
+	background:rgba(255,255,255,0.89);
+	
+	text-align:center;
+	text-transform:uppercase;
+	color:#444;
+	-webkit-transition: left  ease 0.5s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+	z-index:51;
+}
+.popup2 h1{
+	padding:56px 0 24px;
+	
+	font-weight:400;
+	font-size:24px;
+	color:#007c7e;
+} 
+.popup2 h2{
+	padding-bottom:20px;
+	
+	font-weight:400;
+	font-size:20px;
+	color:#373838;
+} 
+.popup2 a.transition{
+	display:inline-block;
+	padding-top:6px;
+	width:212px;
+	height:28px;
+	border-radius:3px;
+	background-color:#278A8D;
+	cursor:pointer;
+	
+	font-size:18px;
+	color:#fff;
+} 
+.popup2 a.transition:hover{
+	background-color:#229FE0;
+}
+.popup2 a.transition:focus{
+	background-color:#444;
+}
+
+/* Устанавливаем позицию появления окна */ 
+.overlay:target+.popup{
+    top:25%;
+	left:50%;
+	margin-left:-185px;
+    opacity:1;
+    visibility:visible;
+}
+.overlay:target+.popup2{
+    top:25%;
+	left:50%;
+	margin-left:-222px;
+    opacity:1;
+    visibility:visible;
+}
+/* Оформляем и позицонируем кнопку закрытия */
+.close-btn{
+	display:block;
+	width:33px;
+	height:33px;
+    position:absolute;
+	top:-28px;
+	right:-14px;
+	padding:0;
+	background:url('../assets/fancybox/fancybox_sprite.png')no-repeat;
+}
