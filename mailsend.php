@@ -1,5 +1,5 @@
 <?php
-	$sendto   = "sales@sinocar.ru";
+	$sendto   = "potap_92@mail.ru";
 	
 	if(isset($_POST['hidden'])){
 		$hidden = $_POST['hidden'];
