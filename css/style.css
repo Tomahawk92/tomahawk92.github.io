@@ -140,7 +140,7 @@ footer {
 /*разрешение от 480px до 599px*/
 @media (max-width: 599px) {
   .container {
-    min-width: 460px;
+    width: 460px;
   }
   .header-pic img {
     width: 100%;
