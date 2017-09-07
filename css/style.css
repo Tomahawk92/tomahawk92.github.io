@@ -101,7 +101,7 @@ footer {
 }
 /*разрешение от 600px до 800px*/
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 580px;
   }
@@ -138,10 +138,9 @@ footer {
   }
 }
 /*разрешение от 480px до 599px*/
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .container {
-    min-width: 460px;
-    width: 100%;
+    width: 460px;
   }
   .header-pic img {
     width: 100%;
