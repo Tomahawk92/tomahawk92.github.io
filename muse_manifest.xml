@@ -1,0 +1,127 @@
+<manifest alg="2" build="2015.1.0.342" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="parfumernaya.com" resolutions="1x" timestamp="1458057381942">
+  <folder name="assets">
+    <file name="all3.mp4" crc="280203237" seo="true" mt="1448489183000"/>
+    <file name="all3.ogv" crc="302191643" seo="true" mt="1448490523000"/>
+    <file name="all3.webm" crc="24348178" seo="true" mt="1448489735000"/>
+    <file name="perfume.mp4" crc="4144842472" seo="true" mt="1457720651000"/>
+    <file name="perfume.ogv" crc="4212103990" seo="true" mt="1457721568000"/>
+    <file name="perfume.webm" crc="478339821" seo="true" mt="1457721486000"/>
+    <file name="am.mp4" crc="162301537" seo="true" mt="1446835704000"/>
+    <file name="am.ogv" crc="306282150" seo="true" mt="1446837929000"/>
+    <file name="am.webm" crc="4467498" seo="true" mt="1446838347000"/>
+    <file name="ja.mp4" crc="510624157" seo="true" mt="1446666821000"/>
+    <file name="ja.ogv" crc="4085874772" seo="true" mt="1446838014000"/>
+    <file name="ja.webm" crc="4027500784" seo="true" mt="1446838473000"/>
+    <file name="shag.mp4" crc="221158854" seo="true" mt="1446847273000"/>
+    <file name="shag.ogv" crc="342816056" seo="true" mt="1446847716000"/>
+    <file name="shag.webm" crc="190987098" seo="true" mt="1446848032000"/>
+    <file name="videoz.mp4" crc="406423025" seo="true" mt="1446842424000"/>
+    <file name="videoz.ogv" crc="381138036" seo="true" mt="1446842890000"/>
+    <file name="videoz.webm" crc="3899464930" seo="true" mt="1446842670000"/>
+  </folder>
+  <folder name="css">
+    <file name="site_global.css" crc="390882414"/>
+    <file name="index.css" crc="4027056924" ref="index"/>
+    <file name="zayavka.css" crc="75537940" ref="zayavka"/>
+    <file name="otziv.css" crc="3803879901" ref="otziv"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="409338010" ref="index:otziv:zayavka"/>
+    <file name="museutils.js" crc="4190794036" ref="index:otziv:zayavka"/>
+    <file name="whatinput.js" crc="84559013" ref="index:otziv:zayavka"/>
+    <file name="jquery.watch.js" crc="349565855" ref="index:otziv:zayavka"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3792042506" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="488283310" ref="index"/>
+    <file name="musewpslideshow.js" crc="248860441" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3898476799" ref="index"/>
+    <file name="touchswipe.js" crc="4191887251" ref="index"/>
+    <file name="form_check.php" crc="430210585" ref="index"/>
+    <file name="form_throttle.php" crc="282343929" ref="index"/>
+    <file name="form_process.php" crc="339897355" ref="index"/>
+    <file name="form-u656.php" crc="308626756" ref="index"/>
+    <file name="form-u2213.php" crc="4217658996" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="3909868097" ref="index"/>
+    <file name="u375-6.png" crc="4254954063" ref="index"/>
+    <file name="u917-4.png" crc="4110395503" ref="index"/>
+    <file name="u937-10.png" crc="4066937925" ref="index"/>
+    <file name="fl5.png" crc="89005490" seo="true" ref="index"/>
+    <file name="fl7.png" crc="3880488414" seo="true" ref="index"/>
+    <file name="fl8.png" crc="522630935" seo="true" ref="index"/>
+    <file name="fl1.png" crc="13675782" seo="true" ref="index"/>
+    <file name="fl2.png" crc="3774640027" seo="true" ref="index"/>
+    <file name="fl4.png" crc="271481350" seo="true" ref="index"/>
+    <file name="burberry_body_tender_fragrance_notes (1)_fotor.jpg" crc="3831540829" seo="true" ref="index"/>
+    <file name="u344-4.png" crc="313837822" ref="index"/>
+    <file name="u1065-4.png" crc="3760133450" ref="index"/>
+    <file name="u1066-4.png" crc="121666391" ref="index"/>
+    <file name="women2.png" crc="108413619" seo="true" ref="index"/>
+    <file name="women.png" crc="4182491355" seo="true" ref="index"/>
+    <file name="u1067-4.png" crc="3788956206" ref="index"/>
+    <file name="u1073-4.png" crc="313837822" ref="index"/>
+    <file name="u1074-4.png" crc="3760133450" ref="index"/>
+    <file name="u1075-5.png" crc="121666391" ref="index"/>
+    <file name="man2.png" crc="4025145902" seo="true" ref="index"/>
+    <file name="m.png" crc="90482907" seo="true" ref="index"/>
+    <file name="u1076-4.png" crc="3788956206" ref="index"/>
+    <file name="u867-4.png" crc="4111370247" ref="index"/>
+    <file name="u868-4.png" crc="337326200" ref="index"/>
+    <file name="a1_fotor.jpg" crc="3976828719" ref="index"/>
+    <file name="a2_fotor.jpg" crc="66500654" ref="index"/>
+    <file name="a5_fotor.jpg" crc="4288570352" ref="index"/>
+    <file name="a4_fotor.jpg" crc="346466901" ref="index"/>
+    <file name="a6_fotor.jpg" crc="3879617918" ref="index"/>
+    <file name="a11_fotor.jpg" crc="4209843922" ref="index"/>
+    <file name="a7_fotor.jpg" crc="3990402573" ref="index"/>
+    <file name="slider-arrows-left.png" crc="3968900546" ref="index"/>
+    <file name="slider-arrows-right.png" crc="165647489" ref="index"/>
+    <file name="blok1.jpg" crc="3972246025" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="blok2.jpg" crc="3944639181" seo="true" ref="index"/>
+    <file name="img_8552_fotor-crop-u888.jpg" crc="181235476" ref="index"/>
+    <file name="f_198562630f024163_fotor-u432-9-fr.png" crc="361131765" ref="index"/>
+    <file name="img_8571_fotor-u511-21-fr.png" crc="412513485" ref="index"/>
+    <file name="f_72156263099bca76-u894-16-fr.png" crc="3953667024" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="entypo_d83d(0)_24.png" crc="452228673" ref="index"/>
+    <file name="u662-17.png" crc="4166268633" ref="index"/>
+    <file name="u662-17-r.png" crc="424706764" ref="index"/>
+    <file name="u662-17-m.png" crc="33231964" ref="index"/>
+    <file name="u662-17-fs.png" crc="461268886" ref="index"/>
+    <file name="entypo_d83d(1)_24.png" crc="3771047223" ref="index"/>
+    <file name="arrow-single_131.png" crc="3882824579" seo="true" ref="index"/>
+    <file name="flak1.png" crc="3905342657" seo="true" ref="index"/>
+    <file name="u1025-4.png" crc="378431326" ref="index"/>
+    <file name="u1026-4.png" crc="3802369754" ref="index"/>
+    <file name="u1027-4.png" crc="93839037" ref="index"/>
+    <file name="u1028-4.png" crc="3834344613" ref="index"/>
+    <file name="u1029-4.png" crc="4264288432" ref="index"/>
+    <file name="-639663c9f918a7a6d2997b905a380ce12c52239f1d6424dfb2-pimgpsh_fullsize_distr.jpg" crc="414472015" seo="true" ref="index"/>
+    <file name="-f77f8d38033bc661961e3db6ff28251106fadf66d2b76563a2-pimgpsh_fullsize_distr.jpg" crc="519517976" seo="true" ref="index"/>
+    <file name="f_597562630aae01e9.jpg" crc="4192358357" seo="true" ref="index"/>
+    <file name="jaz_7077.jpg" crc="3880899677" seo="true" ref="index"/>
+    <file name="-ed4b3193192b69e5c512062ab49c07dd18897e3a93a514042d-pimgpsh_fullsize_distr5.jpg" crc="201544852" seo="true" ref="index"/>
+    <file name="statya.jpg" crc="3975772561" seo="true" ref="index"/>
+    <file name="-03c40503628d1f58d93d224aeafedfdd940ea37cae90366309-pimgpsh_fullsize_distr5.jpg" crc="287678782" seo="true" ref="index"/>
+    <file name="-639663c9f918a7a6d2997b905a380ce12c52239f1d6424dfb2-pimgpsh_fullsize_distr-crop-u1672.jpg" crc="3836424793" ref="index"/>
+    <file name="-f77f8d38033bc661961e3db6ff28251106fadf66d2b76563a2-pimgpsh_fullsize_distr109x109.jpg" crc="240444952" seo="true" ref="index"/>
+    <file name="f_597562630aae01e9103x117.jpg" crc="275219810" seo="true" ref="index"/>
+    <file name="jaz_7077-crop-u1329.jpg" crc="3806653057" ref="index"/>
+    <file name="-ed4b3193192b69e5c512062ab49c07dd18897e3a93a514042d-pimgpsh_fullsize_distr5115x109.jpg" crc="442202764" seo="true" ref="index"/>
+    <file name="statya103x121.jpg" crc="3962777250" seo="true" ref="index"/>
+    <file name="-03c40503628d1f58d93d224aeafedfdd940ea37cae90366309-pimgpsh_fullsize_distr5-crop-u1548.jpg" crc="151021769" ref="index"/>
+    <file name="u2214-17.png" crc="195418727" ref="index"/>
+    <file name="u2214-17-r.png" crc="159630277" ref="index"/>
+    <file name="u2214-17-m.png" crc="489780944" ref="index"/>
+    <file name="u2214-17-fs.png" crc="4247866852" ref="index"/>
+    <file name="flak01.png" crc="79032697" seo="true" ref="index"/>
+    <file name="flak02.png" crc="203837385" seo="true" ref="index"/>
+    <file name="flak03.png" crc="240942745" seo="true" ref="index"/>
+    <file name="flak04.png" crc="3888760855" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4236927094" seo="true" mt="1458057320216" redirect="true"/>
+  <file name="otziv.html" crc="4006772225" seo="true" mt="1446843579761" redirect="true"/>
+  <file name="zayavka.html" crc="3843198012" seo="true" mt="1446843594717" redirect="true"/>
+</manifest>
