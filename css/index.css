@@ -3718,6 +3718,7 @@ position: relative;
 	border-color: transparent;
 	background-color: transparent;
 	padding-bottom: 20px;
+	top: -240px;
 }
 
 #u1250popup
@@ -3735,6 +3736,7 @@ position: relative;
 	position: relative;
 	margin-right: -10000px;
 	left: 83px;
+
 }
 
 #u1311
@@ -3952,7 +3954,7 @@ position: relative;
 {
 	z-index: 446;
 	min-height: 67px;
-	margin-top: 7286px;
+	margin-top: 7318px;
 }
 
 #widgetu2213
@@ -4535,7 +4537,7 @@ body
 	text-align: justify
 }
 .contact {
-	width: 500px;
+	width: 440px;
 	margin-top: -72px;
 margin-left: 423px;
 font-size: 20px;
@@ -4557,7 +4559,7 @@ font-size: 20px;
 	position: relative;
 }
 .logo {
-	margin-left: 355px;
+	margin-left: 30px;
 }
 .otzyv {
 	width: 800px;
@@ -4584,12 +4586,12 @@ font-size: 20px;
   10%{ opacity: 1; }
   20%{ opacity: 1; }
   30%{ opacity: 1; }
-  40%{ opacity: 1; }
-  50%{ opacity: 1; }
-  60%{ opacity: 1; }
-  70%{ opacity: 1; }
-  80%{ opacity: 1; }
-  90%{ opacity: 1;}
+  40%{ opacity: 0; }
+  50%{ opacity: 0; }
+  60%{ opacity: 0; }
+  70%{ opacity: 0; }
+  80%{ opacity: 0; }
+  90%{ opacity: 0;}
   100% { opacity: 0; }
 }
 
@@ -4600,78 +4602,90 @@ font-size: 20px;
   overflow: hidden;
   opacity:0;
   animation-name: fade;
-  animation-duration: 190s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
 }
-.wrapper .otzyv:nth-child(1) { animation-delay: 0s;  }
-.wrapper .otzyv:nth-child(2) { animation-delay: 15s;  }
-.wrapper .otzyv:nth-child(3) { animation-delay: 30s;  }
-.wrapper .otzyv:nth-child(4) { animation-delay: 45s;  }
-.wrapper .otzyv:nth-child(5) { animation-delay: 60s;  }
-.wrapper .otzyv:nth-child(6) { animation-delay: 75s;  }
-.wrapper .otzyv:nth-child(7) { animation-delay: 90s;  }
-.wrapper .otzyv:nth-child(8) { animation-delay: 105s;  }
-.wrapper .otzyv:nth-child(9) { animation-delay: 120s;  }
-.wrapper .otzyv:nth-child(10) { animation-delay: 135s;  }
-.wrapper .otzyv:nth-child(11) { animation-delay: 150s;  }
-.wrapper .otzyv:nth-child(12) { animation-delay: 175s;  }
+.wrapper .otzyv:nth-child(1) { animation-delay: 0s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(2) { animation-delay: 5s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(3) { animation-delay: 10s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(4) { animation-delay: 15s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(5) { animation-delay: 20s;
+animation-iteration-count: infinite;  }
+.wrapper .otzyv:nth-child(6) { animation-delay: 25s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(7) { animation-delay: 30s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(8) { animation-delay: 35s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(9) { animation-delay: 40s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(10) { animation-delay: 45s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(11) { animation-delay: 50s;
+animation-iteration-count: infinite; }
+.wrapper .otzyv:nth-child(12) { animation-delay: 55s;
+animation-iteration-count: infinite;}
 
 #g8 {
 		position: relative;
-    top: -117px;
+    top: 117px;
     left: 83px;
 	}
 
 #g9 {
 		position: relative;
-	    top: -117px;
+	    top: 117px;
 	    left: 93px;
 }
 
 #g10 {
 		position: relative;
-		top: -117px;
+		top: 117px;
 		left: 103px;
 }
 #g11 {
 		position: relative;
-		top: -117px;
+		top: 117px;
 		left: 113px;
 }
 #g12 {
 		position: relative;
-		top: -117px;
+		top: 117px;
 		left: 123px;
 }
 #g13 {
 		position: relative;
-		top: -117px;
+		top: 117px;
 		left: 133px;
 }
 #g14 {
 		position: relative;
-		top: -117px;
+		top: 117px;
 		left: 143px;
 }
 #g15 {
 		position: relative;
-		top: -235px;
+		top: 235px;
     left: -638px;
 }
 
 #g16 {
 		position: relative;
-		top: -235px;
+		top: 235px;
     left: -628px;
 }
 #g17 {
 		position: relative;
-		top: -344px;
+		top: 126px;
     left: 309px;
 }
 #g18 {
 		position: relative;
-		top: -344px;
+		top: 126px;
     left: 319px;
 }
 #bg81 {
