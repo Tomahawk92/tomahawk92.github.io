@@ -374,7 +374,7 @@
     line-height: 22px;
     color: #C69C6D;
     left: 407px;
-    margin-top: 16px;
+    margin-top: 15px;
     position: relative;
 }
 
@@ -830,7 +830,7 @@
 	text-align: center;
 	line-height: 36px;
 	left: 376px;
-	margin-top: 319px;
+	margin-top: 285px;
 	position: relative;
 }
 
@@ -4489,7 +4489,7 @@ body
 	margin-top: 58px;
 	left: 42px;
 }
-#iv-p1, #mar-p1, #div-otzyv-p1 {
+#iv-p1, #mar-p1, .otzyv-name {
 	text-align: right;
 }
 
@@ -4550,3 +4550,59 @@ font-size: 20px;
 .logo {
 	margin-left: 355px;
 }
+.otzyv {
+	width: 800px;
+	height: 165px;
+    font-size: 18px;
+    background-color: #C69C6D;
+    margin: 10px;
+    padding: 26px;
+    border-radius: 19px;
+    line-height: 25px;
+    font-family: pt-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 900px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+@keyframes fade {
+  0%{ opacity: 1; }
+  10%{ opacity: 1; }
+  20%{ opacity: 1; }
+  30%{ opacity: 1; }
+  40%{ opacity: 1; }
+  50%{ opacity: 1; }
+  60%{ opacity: 1; }
+  70%{ opacity: 1; }
+  80%{ opacity: 1; }
+  90%{ opacity: 1;}
+  100% { opacity: 0; }
+}
+
+.wrapper .otzyv {
+  position:absolute;
+  margin: 0 auto;
+  width: 900px;
+  overflow: hidden;
+  opacity:0;
+  animation-name: fade;
+  animation-duration: 190s;
+  animation-iteration-count: infinite;
+}
+.wrapper .otzyv:nth-child(1) { animation-delay: 0s;  }
+.wrapper .otzyv:nth-child(2) { animation-delay: 15s;  }
+.wrapper .otzyv:nth-child(3) { animation-delay: 30s;  }
+.wrapper .otzyv:nth-child(4) { animation-delay: 45s;  }
+.wrapper .otzyv:nth-child(5) { animation-delay: 60s;  }
+.wrapper .otzyv:nth-child(6) { animation-delay: 75s;  }
+.wrapper .otzyv:nth-child(7) { animation-delay: 90s;  }
+.wrapper .otzyv:nth-child(8) { animation-delay: 105s;  }
+.wrapper .otzyv:nth-child(9) { animation-delay: 120s;  }
+.wrapper .otzyv:nth-child(10) { animation-delay: 135s;  }
+.wrapper .otzyv:nth-child(11) { animation-delay: 150s;  }
+.wrapper .otzyv:nth-child(12) { animation-delay: 175s;  }
