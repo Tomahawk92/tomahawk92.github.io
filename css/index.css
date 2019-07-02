@@ -3597,10 +3597,19 @@ margin-top: -953px;
 	margin-right: -10000px;
 	position: relative;
 }
-
+.bg1 {
+z-index: 417;
+width: 817px;
+height: 779px;
+border-width: 0px;
+border-color: transparent;
+background-color: transparent;
+margin-right: -10000px;
+position: relative;
+}
 #u1669_img
 {
-	margin: -6px 113px -7px;
+	/* margin: -6px 113px -7px; */
 }
 
 #u1308
@@ -3617,7 +3626,7 @@ margin-top: -953px;
 
 #u1308_img
 {
-	padding: 70px 88px 69px 89px;
+	/* padding: 70px 88px 69px 89px; */
 }
 
 #u1678
@@ -3632,10 +3641,10 @@ margin-top: -953px;
 	position: relative;
 }
 
-#u1678_img
+/* #u1678_img
 {
 	margin: -6px 57px -7px;
-}
+} */
 
 #u1326
 {
@@ -3651,7 +3660,7 @@ margin-top: -953px;
 
 #u1326_img
 {
-	margin: -52px 114px -53px 115px;
+	/* margin: -52px 114px -53px 115px; */
 }
 
 #u1643
@@ -3697,7 +3706,7 @@ margin-top: -953px;
 
 #u1545_img
 {
-	margin-left: -76px;
+	margin-left: 100px;
 	margin-right: -76px;
 }
 
@@ -4606,3 +4615,92 @@ font-size: 20px;
 .wrapper .otzyv:nth-child(10) { animation-delay: 135s;  }
 .wrapper .otzyv:nth-child(11) { animation-delay: 150s;  }
 .wrapper .otzyv:nth-child(12) { animation-delay: 175s;  }
+
+#g8 {
+		position: relative;
+    top: -117px;
+    left: 83px;
+	}
+
+#g9 {
+		position: relative;
+	    top: -117px;
+	    left: 93px;
+}
+
+#g10 {
+		position: relative;
+		top: -117px;
+		left: 103px;
+}
+#g11 {
+		position: relative;
+		top: -117px;
+		left: 113px;
+}
+#g12 {
+		position: relative;
+		top: -117px;
+		left: 123px;
+}
+#g13 {
+		position: relative;
+		top: -117px;
+		left: 133px;
+}
+#g14 {
+		position: relative;
+		top: -117px;
+		left: 143px;
+}
+#g15 {
+		position: relative;
+		top: -235px;
+    left: -638px;
+}
+
+#g16 {
+		position: relative;
+		top: -235px;
+    left: -628px;
+}
+#g17 {
+		position: relative;
+		top: -344px;
+    left: 309px;
+}
+#g18 {
+		position: relative;
+		top: -344px;
+    left: 319px;
+}
+#bg81 {
+margin-left: 50px;
+
+}
+#bg91 {
+margin-left: 100px;
+
+}
+#bg101 {
+margin-left: 100px;
+}
+#bg111 {
+margin-left: 100px;
+}
+#bg121 {
+margin-left: 100px;
+}
+
+#bg131 {
+margin-left: 180px;
+}
+#bg141 {
+margin-left: 100px;
+}
+#bg151 {
+margin-left: 100px;
+}
+#bg171 {
+margin-left: 50px;
+}
