@@ -343,7 +343,7 @@
 	line-height: 36px;
 	color: #C69C6D;
 	left: 365px;
-	margin-top: 798px;
+	margin-top: 730px;
 	position: relative;
 }
 
@@ -369,12 +369,12 @@
 	width: 352px;
 	min-height: 35px;
 	background-color: transparent;
-	font-size: 18px;
-	text-align: center;
+	font-size: 30px;
+    text-align: center;
     line-height: 22px;
     color: #C69C6D;
     left: 407px;
-    margin-top: 15px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -1765,7 +1765,7 @@ margin-top: -953px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 141px;
-	left: 151px;
+	left: 100px;
 }
 
 #u446
@@ -3567,7 +3567,7 @@ margin-top: -953px;
 	height: 897px;
 	position: relative;
 	margin-right: -10000px;
-	margin-top: 6266px;
+	margin-top: 6335px;
 	left: 112px;
 }
 
@@ -4405,7 +4405,7 @@ position: relative;
 	border-color: transparent;
 	background-color: transparent;
 	position: relative;
-	margin-top: 286px;
+	margin-top: 240px;
 	left: 254px;
 }
 
@@ -4508,6 +4508,7 @@ body
 .parf-title {
 	font-size: 30px;
 	text-align: center;
+	margin-left: -28px;
 	/* text-transform: uppercase; */
 }
 .quote {
@@ -4531,7 +4532,7 @@ body
 }
 
 .services-list li{
-	list-style: disc;
+	list-style: none;
 	margin-top: 9px;
   font-size: 18px;
 	text-align: justify
@@ -4607,27 +4608,27 @@ font-size: 20px;
 }
 .wrapper .otzyv:nth-child(1) { animation-delay: 0s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(2) { animation-delay: 5s;
+.wrapper .otzyv:nth-child(2) { animation-delay: 10s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(3) { animation-delay: 10s;
+.wrapper .otzyv:nth-child(3) { animation-delay: 20s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(4) { animation-delay: 15s;
+.wrapper .otzyv:nth-child(4) { animation-delay: 30s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(5) { animation-delay: 20s;
+.wrapper .otzyv:nth-child(5) { animation-delay: 40s;
 animation-iteration-count: infinite;  }
-.wrapper .otzyv:nth-child(6) { animation-delay: 25s;
+.wrapper .otzyv:nth-child(6) { animation-delay: 50s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(7) { animation-delay: 30s;
+.wrapper .otzyv:nth-child(7) { animation-delay: 60s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(8) { animation-delay: 35s;
+.wrapper .otzyv:nth-child(8) { animation-delay: 70s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(9) { animation-delay: 40s;
+.wrapper .otzyv:nth-child(9) { animation-delay: 80s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(10) { animation-delay: 45s;
+.wrapper .otzyv:nth-child(10) { animation-delay: 90s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(11) { animation-delay: 50s;
+.wrapper .otzyv:nth-child(11) { animation-delay: 100s;
 animation-iteration-count: infinite; }
-.wrapper .otzyv:nth-child(12) { animation-delay: 55s;
+.wrapper .otzyv:nth-child(12) { animation-delay: 100s;
 animation-iteration-count: infinite;}
 
 #g8 {
